@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moto Legado</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <!-- Logo + nome -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="imgs/logomotolegado.png" alt="Logo Moto Legado" class="me-2" style="width: 40px; border-radius: 4px;" />
+        <span style="font-family: 'Bebas Neue', sans-serif; font-size: 28px;">Moto Legado</span>
+      </a>
+
+      <!-- Botão para menu em telas pequenas -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Itens do menu -->
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Início</a></li>
+          <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+          <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner com imagens -->
+  <section class="container my-5">
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <img src="imgs/moto_01.png" alt="Moto 1" class="img-fluid banner-imgs" />
+      </div>
+      <div class="col-md-4">
+        <img src="imgs/moto_02.png" alt="Moto 2" class="img-fluid banner-imgs" />
+      </div>
+      <div class="col-md-4">
+        <img src="imgs/moto_03.png" alt="Moto 3" class="img-fluid banner-imgs" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Texto do Banner -->
+  <section class="text-center mb-5">
+    <h1 class="mb-3" style="color: #8B0000; font-family: 'Bebas Neue', sans-serif;">Motos que fizeram história</h1>
+    <p class="text-muted">Explore o poder e o estilo das máquinas que marcaram época.</p>
+    <a href="produtos.html" class="btn btn-clicar">Ver Motos</a>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section class="container mb-5">
+    <h2 class="text-center mb-3" style="color: #8B0000; font-family: 'Bebas Neue', sans-serif;">Sobre Nós</h2>
+    <p class="text-center text-muted">
+      A Moto Legado nasceu da paixão por motos antigas. Desde 1980 restauramos verdadeiras lendas das estradas, valorizando cada detalhe e a história por trás de cada modelo.
+    </p>
+  </section>
+
+  <!-- Produtos em Destaque -->
+  <section class="destaques py-5">
+    <div class="container">
+      <h2>Modelos em Destaque</h2>
+      
+      <div class="row justify-content-center g-4">
+        <!-- Card Produto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="produtos-imgs" tabindex="0">
+            <img src="imgs/moto_04.png" alt="Harley Davidson 1948" class="img-fluid mb-3 moto-click" />
+            <h5>Harley Davidson 1948</h5>
+            <p>R$ 85.000</p>
+            <a href="#" class="btn btn-clicar">Mais Detalhes</a>
+          </div>
+        </div>
+
+        <!-- Card Produto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="produtos-imgs" tabindex="0">
+            <img src="imgs/moto_05.png" alt="Indian Chief 1936" class="img-fluid mb-3 moto-click" />
+            <h5>Indian Chief 1936</h5>
+            <p>R$ 95.000</p>
+            <a href="#" class="btn btn-clicar">Mais Detalhes</a>
+          </div>
+        </div>
+
+        <!-- Card Produto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="produtos-imgs" tabindex="0">
+            <img src="imgs/moto_06.png" alt="Triumph Bonneville 1960" class="img-fluid mb-3 moto-click" />
+            <h5>Triumph Bonneville 1960</h5>
+            <p>R$ 72.000</p>
+            <a href="#" class="btn btn-clicar">Mais Detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-white text-center py-4 mt-5">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="imgs/msg.png" alt="Ícone de mensagem" width="20" class="me-2" />
+          <p class="mb-0">Email: contato@motolegado.com</p>
+        </div>
+
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="imgs/insta.png" alt="Ícone Instagram" width="20" class="me-2" />
+          <p class="mb-0">@MotoLegado</p>
+        </div>
+        
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="imgs/local.png" alt="Ícone Local" width="20" class="me-2" />
+          <p class="mb-0">Rua das Clássicas, 123 - SP</p>
+        </div>
+      </div>
+      <p class="mb-0">© 2025 Moto Legado. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para seleção do produto (adiciona borda vermelha ao clicar) -->
+  <script>
+    const imagens = document.querySelectorAll('.moto-click');
+
+    imagens.forEach(img => {
+      img.addEventListener('click', () => {
+        // Remove a seleção de todos os cards
+        document.querySelectorAll('.produtos-imgs').forEach(card => {
+          card.classList.remove('selecionado');
+        });
+
+        // Adiciona seleção no card clicado
+        img.closest('.produtos-imgs').classList.add('selecionado');
+      });
+    });
+  </script>
+
+</body>
+</html>

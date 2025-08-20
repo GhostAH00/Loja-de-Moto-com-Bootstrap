@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - Moto Legado</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background-color: #f4f1ec; font-family: 'Roboto Slab', serif;">
+
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="imgs/logomotolegado.png" alt="Logo Moto Legado" style="width: 40px; border-radius: 5px;" class="me-2">
+        <span style="font-family: 'Bebas Neue', cursive; font-size: 28px;">Moto Legado</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Formulário com Título dentro da borda -->
+<div class="container my-5">
+  <div class="p-4 border border-dark rounded shadow">
+    <!-- Título -->
+    <h2 class="text-center text-danger mb-4" style="font-family: 'Bebas Neue', sans-serif;">Fale Conosco</h2>
+
+    <!-- Formulário -->
+    <form>
+      <div class="mb-3">
+        <label for="nome" class="form-label fw-bold">Nome:</label>
+        <input type="text" class="form-control" id="nome" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label fw-bold">E-mail:</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="assunto" class="form-label fw-bold">Assunto:</label>
+        <input type="text" class="form-control" id="assunto" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="mensagem" class="form-label fw-bold">Mensagem:</label>
+        <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-clicar w-100">Enviar</button>
+    </form>
+  </div>
+</div>
+
+
+
+  <!-- Informações da Loja -->
+  <div class="container my-5">
+    <div class="bg-warning-subtle p-4 rounded border-start border-4 border-danger">
+      <h4 class="text-danger" style="font-family: 'Bebas Neue', sans-serif;">Informações da Loja</h4>
+      <p><strong>Endereço:</strong> Rua das Clássicas, 123 - São Paulo, SP</p>
+      <p><strong>Telefone:</strong> (11) 9999-4441</p>
+      <p><strong>E-mail:</strong> contato@motolegado.com</p>
+      <p><strong>Instagram:</strong> @motolegado</p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-white text-center py-4">
+    <p class="mb-0">© 2025 Moto Legado. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

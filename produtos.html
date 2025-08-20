@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produtos - Moto Legado </title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />  
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="imgs/logomotolegado.png" alt="Logo Moto Legado" class="me-2" style="width: 40px; border-radius: 5px;" />
+        <span class="logo-text">Moto Legado</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Alternar menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Filtros -->
+  <section class="filtros container my-5">
+    <form class="filtro-form row g-3 justify-content-center align-items-end" role="search" aria-label="Filtro de motos">
+      <h2 class="filtro-title text-center w-100 mb-4">Filtrar Motos</h2>
+
+      <div class="col-sm-6 col-md-3">
+        <label for="marca" class="form-label fw-bold">Marca:</label>
+        <select id="marca" name="marca" class="form-select" aria-describedby="marcaHelp">
+          <option value="">Todas</option>
+          <option value="harley">Harley-Davidson</option>
+          <option value="indian">Indian</option>
+          <option value="triumph">Triumph</option>
+        </select>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <label for="tipo" class="form-label fw-bold">Tipo:</label>
+        <select id="tipo" name="tipo" class="form-select" aria-describedby="tipoHelp">
+          <option value="">Todos</option>
+          <option value="esportiva">Esportiva</option>
+          <option value="custom">Custom</option>
+          <option value="classica">Clássica</option>
+        </select>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <label for="preco" class="form-label fw-bold">Preço até:</label>
+        <select id="preco" name="preco" class="form-select" aria-describedby="precoHelp">
+          <option value="">Sem limite</option>
+          <option value="30000">R$ 30.000</option>
+          <option value="60000">R$ 60.000</option>
+          <option value="90000">R$ 90.000</option>
+        </select>
+      </div>
+
+      <div class="col-sm-6 col-md-2 d-grid">
+        <button type="submit" class="btn btn-clicar fw-bold">Filtrar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Grade de Produtos -->
+  <main class="grade-produtos container mb-5" aria-label="Lista de motos">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Card Produto 1 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="produtos-imgs card shadow-sm h-100" tabindex="0">
+          <img src="imgs/moto_04.png" class="card-img-top" alt="Harley Davidson 1948" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Harley Davidson 1948</h3>
+            <p class="card-text fw-bold text-danger">R$ 85.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Produto 2 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="produtos-imgs card shadow-sm h-100" tabindex="0">
+          <img src="imgs/moto_05.png" class="card-img-top" alt="Indian Chief 1936" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Indian Chief 1936</h3>
+            <p class="card-text fw-bold text-danger">R$ 95.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Produto 3 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="produtos-imgs card shadow-sm h-100" tabindex="0">
+          <img src="imgs/moto_06.png" class="card-img-top" alt="Triumph Bonneville 1960" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Triumph Bonneville 1960</h3>
+            <p class="card-text fw-bold text-danger">R$ 72.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Produto 4 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="produtos-imgs card shadow-sm h-100" tabindex="0">
+          <img src="imgs/moto_07.png" class="card-img-top" alt="Harley Custom 1975" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Harley Custom 1975</h3>
+            <p class="card-text fw-bold text-danger">R$ 78.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Produto 5 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="produtos-imgs card shadow-sm h-100" tabindex="0">
+          <img src="imgs/moto_08.png" class="card-img-top" alt="Indian Vintage 1942" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Indian Vintage 1942</h3>
+            <p class="card-text fw-bold text-danger">R$ 88.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Produto 6 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="produtos-imgs card shadow-sm h-100" tabindex="0">
+          <img src="imgs/moto_09.png" class="card-img-top" alt="Triumph Speed 1965" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Triumph Speed 1965</h3>
+            <p class="card-text fw-bold text-danger">R$ 70.000</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-white text-center py-4 mt-5">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="imgs/msg.png" alt="Ícone de mensagem" width="20" class="me-2" />
+          <p class="mb-0">Email: contato@motolegado.com</p>
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="imgs/insta.png" alt="Ícone Instagram" width="20" class="me-2" />
+          <p class="mb-0">@MotoLegado</p>
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="imgs/local.png" alt="Ícone Local" width="20" class="me-2" />
+          <p class="mb-0">Rua das Clássicas, 123 - SP</p>
+        </div>
+      </div>
+      <p class="mb-0">© 2025 Moto Legado. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para seleção do produto (borda vermelha ao clicar) -->
+  <script>
+    const cards = document.querySelectorAll('.produtos-imgs');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        cards.forEach(c => c.classList.remove('selecionado'));
+        card.classList.add('selecionado');
+      });
+    });
+  </script>
+</body>
+</html>
